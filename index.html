@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cùng Con 24/7 – Quyền riêng tư</title>
+<meta name="description" content="Chính sách quyền riêng tư của ứng dụng Cùng Con 24/7 – Privacy policy of the Cùng Con 24/7 app">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Nunito:wght@800;900&display=swap">
+<style>
+/* Layout: one reading column (~66ch), brand header band, sticky language switch; legal text set as numbered articles */
+:root{
+  --bg:#FFFBF5; --band:#FFF1E2; --surface:#FFFFFF; --fg:#17302D; --muted:#5B6966; --line:#EEDFD0;
+  --accent:#0F766E; --accent-soft:#DDF2EC; --hot:#C2410C;
+  --font:'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --brand:'Nunito', 'Be Vietnam Pro', system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0F1F1D; --band:#15302C; --surface:#172E2B; --fg:#E7F2EF; --muted:#9FB6B1; --line:#284440;
+  --accent:#5EEAD4; --accent-soft:#134E4A; --hot:#FB923C; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0F1F1D; --band:#15302C; --surface:#172E2B; --fg:#E7F2EF; --muted:#9FB6B1; --line:#284440;
+  --accent:#5EEAD4; --accent-soft:#134E4A; --hot:#FB923C; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.band{background:var(--band);border-bottom:1px solid var(--line)}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+header .wrap{padding-block:28px 22px;display:flex;flex-direction:column;gap:10px}
+.brandrow{display:flex;align-items:center;gap:12px}
+.mark{width:52px;height:52px;border-radius:50%;background:#FFE9D6;flex:none;display:inline-flex;overflow:hidden}
+.name{font-family:var(--brand);font-weight:900;font-size:26px;line-height:1.1;color:var(--accent)}
+.name b{color:var(--hot)}
+h1{font-size:30px;line-height:1.2;margin:4px 0 0;text-wrap:balance;font-weight:700}
+.meta{color:var(--muted);font-size:14px;margin:0}
+.switch{position:sticky;top:env(safe-area-inset-top, 0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--bg)}
+.switch .wrap{display:flex;gap:8px;padding-block:10px;align-items:center;flex-wrap:wrap}
+.switch button{min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.switch button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.switch a{margin-left:auto;font-size:14px;color:var(--accent);font-weight:600;text-decoration:none}
+main .wrap{padding-block:24px 56px}
+article{display:flex;flex-direction:column;gap:26px}
+.lead{font-size:17px;margin:0}
+section h2{font-size:19px;line-height:1.35;margin:0 0 6px;display:flex;gap:10px;align-items:baseline;text-wrap:balance}
+section h2 .no{font-size:13px;font-weight:700;color:var(--accent);min-width:28px;font-variant-numeric:tabular-nums}
+section p{margin:0 0 8px}
+section ul{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:4px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-top:1px solid var(--line)}
+thead th{border-top:none;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td:first-child{font-weight:600;white-space:nowrap}
+.box{background:var(--accent-soft);border-radius:12px;padding:14px 16px}
+.box p:last-child{margin:0}
+.mail{display:inline-flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mail code{font-family:inherit;font-weight:700;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:2px 8px;user-select:all}
+.mail button{min-height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (max-width:480px){ h1{font-size:25px} .name{font-size:22px} }
+</style>
+</head>
+<body>
+
+<header class="band"><div class="wrap">
+  <div class="brandrow">
+    <span class="mark" aria-hidden="true"><svg width="52" height="52" viewBox="-6 -4 132 132"><path d="M24 106C9 88 13 63 33 51c5 19 4 39-9 55z" fill="#34D399"/><path d="M43 25c-13 8-15 26-3 34l9-4c-8-6-8-19-1-25z" fill="#0F766E"/><path d="M54 80c0-8 6-11 12-11 8 0 16 4 18 13-8 10-24 10-30 3z" fill="#FDBA74"/><path d="M45 52C30 60 26 83 40 97c14 14 45 12 61-11 2-4-2-10-7-7-11 13-31 17-43 7-8-8-8-22 0-30z" fill="#0F766E"/><circle cx="52" cy="38" r="14" fill="#F7CDB1"/><path d="M38.5 40c-1-12 7-19.5 15.5-19.5 7.5 0 12.5 5 13.5 11-6-3.5-14-4-20-1.5-4 1.7-7 5-9 10z" fill="#0F766E"/><circle cx="67" cy="61" r="13.5" fill="#F9D9C3"/><path d="M54 59c0-10 8-14.5 15-13.5 7 1 11 6.5 10.5 12-5-4.5-13-6-19-4-3 1-5 3-6.5 5.5z" fill="#4B2E2B"/><circle cx="98" cy="82" r="5.2" fill="#F7CDB1"/><circle cx="74.5" cy="66.5" r="2.6" fill="#FCA5A5"/><path d="M93 22c2.6-4.6 10-3.6 10 2.3 0 4.6-5.6 8-10 11.2-4.4-3.2-10-6.6-10-11.2 0-5.9 7.4-6.9 10-2.3z" fill="#F97316"/></svg></span>
+    <span class="name">Cùng Con <b>24/7</b></span>
+  </div>
+  <h1 data-l="vi">Chính sách quyền riêng tư</h1>
+  <h1 data-l="en" hidden>Privacy policy</h1>
+  <p class="meta" data-l="vi">Ứng dụng Cùng Con 24/7 – Sổ tay chăm sóc và nuôi dạy con · Cập nhật ngày 29/10/2026</p>
+  <p class="meta" data-l="en" hidden>Cùng Con 24/7 – baby care and parenting log · Last updated 29 October 2026</p>
+</div></header>
+
+<nav class="switch" aria-label="Ngôn ngữ / Language"><div class="wrap">
+  <button type="button" id="b-vi" data-set="vi" aria-pressed="true">Tiếng Việt</button>
+  <button type="button" id="b-en" data-set="en" aria-pressed="false">English</button>
+  <a href="#xoa-du-lieu" data-l="vi">Xóa dữ liệu ↓</a>
+  <a href="#delete-data" data-l="en" hidden>Delete data ↓</a>
+</div></nav>
+
+<main><div class="wrap">
+
+<article data-l="vi" lang="vi">
+  <p class="lead">Cùng Con 24/7 là sổ tay để cả nhà cùng ghi việc chăm một bé. Chính sách này cho biết app lưu những gì, lưu ở đâu, ai xem được và cách bạn xóa dữ liệu. Tóm tắt: dữ liệu chỉ dùng để app hoạt động, chỉ người trong sổ xem được, không quảng cáo, không bán dữ liệu.</p>
+
+  <section><h2><span class="no">1</span>Ai cung cấp ứng dụng</h2>
+    <p>Cùng Con 24/7 (mã ứng dụng vn.cungcon.app) do một nhà phát triển cá nhân tại Việt Nam phát hành trên Google Play và App Store. Mọi câu hỏi về quyền riêng tư, gửi về email ở mục 12.</p></section>
+
+  <section><h2><span class="no">2</span>Dữ liệu app lưu</h2>
+    <p>App chỉ lưu những gì người trong nhà tự nhập vào sổ:</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Loại</th><th>Ví dụ</th><th>Bắt buộc?</th></tr></thead>
+      <tbody>
+        <tr><td>Thông tin của bé</td><td>Tên gọi ở nhà, ngày sinh hoặc ngày dự sinh, giới tính, ảnh của bé</td><td>Tên và ngày sinh (hoặc ngày dự sinh)</td></tr>
+        <tr><td>Người trong nhà</td><td>Tên gọi như "Mẹ", "Bà nội" và vai trò trong sổ</td><td>Có</td></tr>
+        <tr><td>Nhật ký chăm bé</td><td>Bú, ăn, ngủ, tã, lịch mỗi ngày, ghi chú, mục tiêu</td><td>Không</td></tr>
+        <tr><td>Sức khỏe</td><td>Nhiệt độ, thuốc, triệu chứng, dị ứng, cân nặng, chiều cao, lịch khám, chỉ số của mẹ khi mang thai</td><td>Không</td></tr>
+        <tr><td>Ảnh và giấy tờ</td><td>Ảnh đơn thuốc, kết quả xét nghiệm, file PDF, ảnh nền gia đình</td><td>Không</td></tr>
+        <tr><td>Mã định danh</td><td>Mã đăng nhập ẩn danh do Firebase tạo cho mỗi máy, mã gia đình của sổ</td><td>Có, app tự tạo</td></tr>
+      </tbody></table></div>
+    <p style="margin-top:10px">App <b>không</b> thu thập vị trí, danh bạ, tin nhắn, mã quảng cáo hay dữ liệu thống kê hành vi. App không yêu cầu email, số điện thoại hay mật khẩu.</p></section>
+
+  <section><h2><span class="no">3</span>Dùng dữ liệu để làm gì</h2>
+    <ul>
+      <li>Hiện sổ cho mọi người trong nhà và đồng bộ giữa các máy.</li>
+      <li>Nhắc việc trên điện thoại (thông báo được lên lịch ngay trên máy).</li>
+      <li>Tính giờ ngủ, dự đoán giấc tiếp theo, làm báo cáo tuần.</li>
+    </ul>
+    <p style="margin-top:8px">Chúng tôi không bán dữ liệu, không dùng dữ liệu để quảng cáo và không dùng dữ liệu để huấn luyện trí tuệ nhân tạo.</p></section>
+
+  <section><h2><span class="no">4</span>Dữ liệu lưu ở đâu</h2>
+    <p>Dữ liệu của sổ được lưu trên Google Cloud Firestore (dịch vụ Firebase của Google) và một bản trên máy để dùng được khi mất mạng. Google xử lý dữ liệu thay cho nhà phát triển theo điều khoản bảo mật của Firebase; Google không dùng dữ liệu này cho mục đích riêng. Dữ liệu có thể được lưu trên máy chủ ngoài Việt Nam.</p></section>
+
+  <section><h2><span class="no">5</span>Ai xem được dữ liệu</h2>
+    <ul>
+      <li>Chỉ những máy đã tham gia sổ bằng mã gia đình. Mỗi sổ có tối đa 5 người.</li>
+      <li>Người bị xóa khỏi danh sách hoặc đã rời sổ không xem được sổ nữa.</li>
+      <li>Nhà phát triển chỉ truy cập dữ liệu khi bạn yêu cầu hỗ trợ hoặc khi pháp luật bắt buộc.</li>
+      <li>Khi bạn tự bấm Gửi hoặc Lưu file (ví dụ nhật ký, tóm tắt đợt ốm), file đó đi đến nơi bạn chọn.</li>
+    </ul></section>
+
+  <section><h2><span class="no">6</span>Bảo vệ dữ liệu</h2>
+    <p>Dữ liệu được truyền qua kết nối mã hóa (TLS). Quy tắc bảo mật trên Firebase chỉ cho máy đã tham gia sổ đọc và ghi sổ đó. Mã gia đình giống như chìa khóa: chỉ gửi cho người trong nhà và không đăng lên mạng xã hội.</p></section>
+
+  <section><h2><span class="no">7</span>Quyền app xin trên điện thoại</h2>
+    <ul>
+      <li><b>Máy ảnh và ảnh:</b> chỉ khi bạn bấm chụp hoặc chọn ảnh của bé, đơn thuốc, giấy tờ.</li>
+      <li><b>Thông báo:</b> để nhắc giờ ăn, giờ ngủ, thuốc, lịch khám.</li>
+      <li><b>Internet:</b> để đồng bộ sổ giữa các máy.</li>
+    </ul></section>
+
+  <section><h2><span class="no">8</span>Trẻ em</h2>
+    <p>App dành cho cha mẹ và người chăm sóc từ 18 tuổi. Thông tin về bé do cha mẹ hoặc người giám hộ nhập. App không dành cho trẻ em tự sử dụng.</p></section>
+
+  <section><h2><span class="no">9</span>Thanh toán</h2>
+    <p>Khi app có gói trả phí, việc thanh toán do Google Play hoặc App Store xử lý. Nhà phát triển không nhận và không lưu số thẻ hay thông tin ngân hàng của bạn.</p></section>
+
+  <section id="xoa-du-lieu"><h2><span class="no">10</span>Lưu giữ và xóa dữ liệu</h2>
+    <p>Dữ liệu được giữ trong suốt thời gian sổ còn được sử dụng. Bạn có thể xóa bất cứ lúc nào:</p>
+    <ul>
+      <li><b>Xóa hồ sơ của bé ngay trong app:</b> Thêm → Hồ sơ của bé → nút "Xóa hồ sơ". Hồ sơ, nhật ký, lịch và lịch hẹn của bé bị xóa khỏi sổ.</li>
+      <li><b>Rời sổ trên một máy:</b> Thêm → Gia đình → Rời sổ trên máy này.</li>
+      <li><b>Xóa toàn bộ sổ:</b> gửi email (mục 12) kèm mã gia đình, tiêu đề "Xóa dữ liệu". Chúng tôi xóa toàn bộ dữ liệu của sổ trong vòng 30 ngày và báo lại cho bạn.</li>
+    </ul></section>
+
+  <section><h2><span class="no">11</span>Quyền của bạn</h2>
+    <p>Bạn có quyền xem, sửa, tải về (Thêm → Nhật ký đã ghi → Tải nhật ký về máy) và xóa dữ liệu của mình, và rút lại sự đồng ý bằng cách xóa dữ liệu như mục 10. Chúng tôi xử lý dữ liệu theo quy định của pháp luật Việt Nam về bảo vệ dữ liệu cá nhân.</p></section>
+
+  <section><h2><span class="no">12</span>Liên hệ và thay đổi</h2>
+    <div class="box">
+      <p class="mail">Email: <code id="mail-vi">khucxuanlong@gmail.com</code> <button type="button" data-copy="mail-vi">Chép</button></p>
+      <p>Khi chính sách thay đổi, chúng tôi cập nhật ngày ở đầu trang và báo trong app nếu thay đổi quan trọng.</p>
+    </div></section>
+
+  <footer>Cùng Con 24/7 chỉ nhắc, ghi chép và gợi ý; app không chẩn đoán bệnh và không thay thế bác sĩ.</footer>
+</article>
+
+<article data-l="en" lang="en" hidden>
+  <p class="lead">Cùng Con 24/7 is a shared log that lets a family record the care of one baby. This policy explains what the app stores, where it is stored, who can see it and how to delete it. In short: data is used only to run the app, only people in the log can see it, there are no ads and we never sell data.</p>
+
+  <section><h2><span class="no">1</span>Who provides the app</h2>
+    <p>Cùng Con 24/7 (app ID vn.cungcon.app) is published on Google Play and the App Store by an individual developer based in Vietnam. Send any privacy question to the email in section 12.</p></section>
+
+  <section><h2><span class="no">2</span>Data the app stores</h2>
+    <p>The app only stores what family members enter in the log:</p>
+    <div class="tbl"><table>
+      <thead><tr><th>Type</th><th>Examples</th><th>Required?</th></tr></thead>
+      <tbody>
+        <tr><td>Baby details</td><td>Nickname, date of birth or due date, sex, baby's photo</td><td>Nickname and date of birth (or due date)</td></tr>
+        <tr><td>Family members</td><td>Names such as "Mom" or "Grandma" and their role in the log</td><td>Yes</td></tr>
+        <tr><td>Care diary</td><td>Feeds, meals, sleep, nappies, daily routine, notes, goals</td><td>No</td></tr>
+        <tr><td>Health</td><td>Temperature, medicine, symptoms, allergies, weight, height, check-ups, mum's measurements in pregnancy</td><td>No</td></tr>
+        <tr><td>Photos and documents</td><td>Photos of prescriptions, test results, PDF files, family background photo</td><td>No</td></tr>
+        <tr><td>Identifiers</td><td>An anonymous sign-in ID created by Firebase for each device, the log's family code</td><td>Yes, created by the app</td></tr>
+      </tbody></table></div>
+    <p style="margin-top:10px">The app does <b>not</b> collect location, contacts, messages, advertising IDs or usage analytics. It does not ask for an email address, phone number or password.</p></section>
+
+  <section><h2><span class="no">3</span>How the data is used</h2>
+    <ul>
+      <li>To show the log to everyone in the family and sync it between devices.</li>
+      <li>To send reminders (notifications are scheduled on the device itself).</li>
+      <li>To total sleep, predict the next nap and build the weekly report.</li>
+    </ul>
+    <p style="margin-top:8px">We do not sell data, use it for advertising, or use it to train artificial intelligence.</p></section>
+
+  <section><h2><span class="no">4</span>Where the data is stored</h2>
+    <p>Log data is stored in Google Cloud Firestore (Google's Firebase service), with a copy on the device so the app works offline. Google processes the data on the developer's behalf under the Firebase data processing terms and does not use it for its own purposes. Data may be stored on servers outside Vietnam.</p></section>
+
+  <section><h2><span class="no">5</span>Who can see the data</h2>
+    <ul>
+      <li>Only devices that joined the log with the family code. Each log has up to 5 people.</li>
+      <li>People removed from the list, or who left the log, can no longer see it.</li>
+      <li>The developer only accesses data when you ask for support or when required by law.</li>
+      <li>When you tap Send or Save file (for example the diary or an illness summary), that file goes where you choose.</li>
+    </ul></section>
+
+  <section><h2><span class="no">6</span>How the data is protected</h2>
+    <p>Data travels over encrypted connections (TLS). Firebase security rules only let devices that joined a log read and write that log. The family code works like a key: share it only with family and never post it on social media.</p></section>
+
+  <section><h2><span class="no">7</span>Phone permissions</h2>
+    <ul>
+      <li><b>Camera and photos:</b> only when you choose to take or pick a photo of your baby, a prescription or a document.</li>
+      <li><b>Notifications:</b> to remind you of feeds, naps, medicine and check-ups.</li>
+      <li><b>Internet:</b> to sync the log between devices.</li>
+    </ul></section>
+
+  <section><h2><span class="no">8</span>Children</h2>
+    <p>The app is for parents and carers aged 18 and over. Information about the baby is entered by a parent or guardian. The app is not meant to be used by children.</p></section>
+
+  <section><h2><span class="no">9</span>Payments</h2>
+    <p>When the app offers a paid plan, payment is handled by Google Play or the App Store. The developer never receives or stores your card or bank details.</p></section>
+
+  <section id="delete-data"><h2><span class="no">10</span>Keeping and deleting data</h2>
+    <p>Data is kept for as long as the log is in use. You can delete it at any time:</p>
+    <ul>
+      <li><b>Delete the baby's profile in the app:</b> More → Baby's profile → Delete profile. The baby's profile, diary, routine and appointments are removed from the log.</li>
+      <li><b>Leave the log on one device:</b> More → Family → Leave the log on this device.</li>
+      <li><b>Delete the whole log:</b> email us (section 12) with the family code and the subject "Delete data". We delete all data in the log within 30 days and confirm by email.</li>
+    </ul></section>
+
+  <section><h2><span class="no">11</span>Your rights</h2>
+    <p>You can view, correct, export (More → Diary → "Download the diary") and delete your data, and withdraw consent by deleting it as described in section 10. We process data in line with Vietnamese personal data protection law.</p></section>
+
+  <section><h2><span class="no">12</span>Contact and changes</h2>
+    <div class="box">
+      <p class="mail">Email: <code id="mail-en">khucxuanlong@gmail.com</code> <button type="button" data-copy="mail-en">Copy</button></p>
+      <p>When this policy changes, we update the date at the top and tell you in the app if the change is important.</p>
+    </div></section>
+
+  <footer>Cùng Con 24/7 only reminds, records and suggests. It does not diagnose illness and does not replace a doctor.</footer>
+</article>
+
+</div></main>
+
+<script>
+(function(){
+  var cur = 'vi';
+  function setLang(l, scrollTo){
+    cur = l;
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-l]').forEach(function(el){ el.hidden = el.getAttribute('data-l') !== l; });
+    document.querySelectorAll('[data-set]').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === l)); });
+    document.title = l === 'en' ? 'Cùng Con 24/7 – Privacy' : 'Cùng Con 24/7 – Quyền riêng tư';
+    if (scrollTo) { var t = document.getElementById(scrollTo); if (t) setTimeout(function(){ t.scrollIntoView(); }, 30); }
+  }
+  function fromHash(){
+    var h = (location.hash || '').slice(1);
+    if (h === 'en') setLang('en');
+    else if (h === 'delete-data') setLang('en', 'delete-data');
+    else if (h === 'xoa-du-lieu') setLang('vi', 'xoa-du-lieu');
+    else if (h === 'vi') setLang('vi');
+  }
+  document.querySelectorAll('[data-set]').forEach(function(b){
+    b.addEventListener('click', function(){ var l = b.getAttribute('data-set'); setLang(l); try { history.replaceState(null, '', '#' + l); } catch(e) {} });
+  });
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var el = document.getElementById(b.getAttribute('data-copy')), txt = el.textContent, label = b.textContent;
+      var done = function(){ b.textContent = cur === 'en' ? 'Copied' : 'Đã chép'; setTimeout(function(){ b.textContent = label; }, 1600); };
+      var sel = function(){ var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, sel); else sel();
+    });
+  });
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+})();
+</script>
+
+</body>
+</html>
